@@ -70,55 +70,55 @@ function lentele_c( $pavadinimas, $tekstas, $n_nuoroda, $kom_kiekis = FALSE, $da
 
 	//Jei naudosim kalbystę ištraukiam $lang, jei ne ištrinam.
 	
-		global $lang, $page;
-	
-		?>
-	
-		<section>
-	
-			<header>
-	
-				<h2>
-	
-					<a href="<?php echo $n_nuoroda; ?>"><?php echo $pavadinimas; ?></a>
-	
-				</h2>
-	
-			</header>
-	
-			<?php echo $reitingai . $tekstas; ?>
-	
-		</section>
-	
-	<?php
-	
-	}
-	
-	
-	//Centrinės pozicijos blokai
-	
-	function lentele( $pavadinimas, $tekstas, $reitingai = FALSE ) {
-	
-	?>
-	
-		<section>
-	
-			<header>
-	
-				<h2>
-	
-					<?php echo $pavadinimas; ?>
-	
-				</h2>
-	
-			</header>
-	
-			<?php echo $reitingai . $tekstas; ?>
-	
-		</section>
-	
-	<?php
+	global $lang, $page;
 
+	?>
+
+	<section>
+
+		<header>
+
+			<h2>
+
+				<a href="<?php echo $n_nuoroda; ?>"><?php echo $pavadinimas; ?></a>
+
+			</h2>
+
+		</header>
+
+		<?php echo $reitingai . $tekstas; ?>
+
+	</section>
+
+<?php
+
+}
+	
+	
+//Centrinės pozicijos blokai
+
+function lentele( $pavadinimas, $tekstas, $reitingai = FALSE ) {
+
+?>
+
+	<section>
+
+		<header>
+
+			<h2>
+
+				<?php echo $pavadinimas; ?>
+
+			</h2>
+
+		</header>
+
+		<?php echo $reitingai . $tekstas; ?>
+
+	</section>
+
+<?php
+}
 
 
 //Atvaizduojame klaidos pranešimą
