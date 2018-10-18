@@ -38,56 +38,88 @@ function lentele_r( $pavadinimas, $tekstas, $label = FALSE ) {
 }
 
 //Kairės pozicijos blokai
+
 function lentele_l( $pavadinimas, $tekstas, $label = FALSE ) {
-?>
-	<div id="menu">
-			<ul>
-				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-				<li><a href="#" accesskey="2" title="">Our Clients</a></li>
-				<li><a href="#" accesskey="3" title="">About Us</a></li>
-				<li><a href="#" accesskey="4" title="">Careers</a></li>
-				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
-			</ul>
-		</div>
-<?php
+
+    ?>
+
+        <section>
+
+            <header>
+
+                <h2>
+
+                    <?php echo $pavadinimas; ?>
+
+                </h2>
+
+            </header>
+
+            <?php echo $tekstas; ?>
+
+        </section>
+
+    <?php
+
 }
 
 //Naujienų, straipsnių lentelė
+
 function lentele_c( $pavadinimas, $tekstas, $n_nuoroda, $kom_kiekis = FALSE, $datai = FALSE, $autorius = FALSE, $reitingai = FALSE ) {
 
-//Jei naudosim kalbystę ištraukiam $lang, jei ne ištrinam.
-	global $lang, $page;
-//Tvarkome skaitymo nuorodas
-//$kom_kiekis - komentarų skaičius, $n_nuoroda - nuoroda skaitymui
-	$data = date( 'Y-m-d', $datai );
-//Naujienų
-	if ( 'naujienos' == str_replace( 'puslapiai/', '', $page ) ) {
-		$skaitom = "<a href='{$n_nuoroda}'>{$lang['news']['read']} • {$lang['news']['comments']}({$kom_kiekis})</a>";
-//Straipsnių
-	} else {
-		$skaitom = "<a href='{$n_nuoroda}'>{$lang['article']['read']}({$kom_kiekis})</a>";
-	}
-//Atvaizduojame
-	echo "<div class='pavadinimas2' title='{$pavadinimas}'>" . trimlink( $pavadinimas, 65 ) . "</div>
-    <div class='vidus'>
-	<div class='text'>
-	<div style='float:left;'>{$reitingai}</div>{$tekstas}
-	<div class='line'></div>
-	<b>{$lang['article']['author']}:</b> {$autorius}
-	<b>{$lang['article']['date']}:</b> {$data}
-	<span class='read_more' style='float:right;display:block;'>{$skaitom}</span>
-	</div>
-	</div>";
-}
 
+	//Jei naudosim kalbystę ištraukiam $lang, jei ne ištrinam.
+	
+	global $lang, $page;
+
+	?>
+
+	<section>
+
+		<header>
+
+			<h2>
+
+				<a href="<?php echo $n_nuoroda; ?>"><?php echo $pavadinimas; ?></a>
+
+			</h2>
+
+		</header>
+
+		<?php echo $reitingai . $tekstas; ?>
+
+	</section>
+
+<?php
+
+}
+	
+	
 //Centrinės pozicijos blokai
+
 function lentele( $pavadinimas, $tekstas, $reitingai = FALSE ) {
 
-	echo "<div class='pavadinimas'>{$pavadinimas}</div>
-    <div class='vidus'>
-	<div class='text'>{$reitingai}{$tekstas}</div>
-	</div>";
+?>
+
+	<section>
+
+		<header>
+
+			<h2>
+
+				<?php echo $pavadinimas; ?>
+
+			</h2>
+
+		</header>
+
+		<?php echo $reitingai . $tekstas; ?>
+
+	</section>
+
+<?php
 }
+
 
 //Atvaizduojame klaidos pranešimą
 function klaida( $pavadinimas, $tekstas, $label = FALSE ) {
