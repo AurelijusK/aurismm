@@ -34,7 +34,6 @@ function remontas( $pavadinimas, $tekstas ) {
 //Jeigu neprireikia paliekame taip.
 function lentele_r( $pavadinimas, $tekstas, $label = FALSE ) {
 
-	lentele_l( $pavadinimas, $tekstas );
 }
 
 //Kairės pozicijos blokai
@@ -78,11 +77,9 @@ function lentele_c( $pavadinimas, $tekstas, $n_nuoroda, $kom_kiekis = FALSE, $da
 
 	<section >
 								<header>
-									<h2>Lorem Ipsum Dolor</h2>
+								<h2>  <?php echo $pavadinimas; ?></h2>
 								</header>
-								<p>This is <strong>Synchronous</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
-								<p>Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
-								<p>Sed etiam vestibulum velit mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor.</p>
+								<?php echo $reitingai . $tekstas; ?>	
 								<a href="#" class="button">Full Article</a>
 							</section>
 
@@ -99,11 +96,9 @@ function lentele( $pavadinimas, $tekstas, $reitingai = FALSE ) {
 
 	<section >
 								<header>
-									<h2>Lorem Ipsum Dolor</h2>
+									<h2>  <?php echo $pavadinimas; ?></h2>
 								</header>
-								<p>This is <strong>Synchronous</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
-								<p>Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
-								<p>Sed etiam vestibulum velit mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor.</p>
+								<?php echo $reitingai . $tekstas; ?>
 								<a href="#" class="button">Full Article</a>
 							</section>
 <?php

@@ -39,17 +39,11 @@ function lentele_r( $pavadinimas, $tekstas, $label = FALSE ) {
 
 //Kairės pozicijos blokai
 function lentele_l( $pavadinimas, $tekstas, $label = FALSE ) {
-?>
-	<div id="menu">
-			<ul>
-				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-				<li><a href="#" accesskey="2" title="">Our Clients</a></li>
-				<li><a href="#" accesskey="3" title="">About Us</a></li>
-				<li><a href="#" accesskey="4" title="">Careers</a></li>
-				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
-			</ul>
-		</div>
-<?php
+
+	echo "	<div class='pavadinimas'>{$pavadinimas}</div>
+	<div class='vidus'>
+	<div class='text'>{$tekstas}</div>
+	</div>";
 }
 
 //Naujienų, straipsnių lentelė

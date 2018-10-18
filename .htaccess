@@ -36,3 +36,15 @@ Order Allow,Deny
 Deny from env=draudziam
 
 Allow from all
+
+ErrorDocument 404 http://localhost:8081/aurismm/install//klaida.php
+ErrorDocument 400 http://localhost:8081/aurismm/install//klaida.php
+ErrorDocument 401 http://localhost:8081/aurismm/install//klaida.php
+ErrorDocument 403 http://localhost:8081/aurismm/install//klaida.php
+ErrorDocument 405 http://localhost:8081/aurismm/install//klaida.php
+ErrorDocument 406 http://localhost:8081/aurismm/install//klaida.php
+ErrorDocument 409 http://localhost:8081/aurismm/install//klaida.php
+ErrorDocument 413 http://localhost:8081/aurismm/install//klaida.php
+ErrorDocument 414 http://localhost:8081/aurismm/install//klaida.php
+ErrorDocument 500 http://localhost:8081/aurismm/install//klaida.php
+ErrorDocument 501 http://localhost:8081/aurismm/install//klaida.php
