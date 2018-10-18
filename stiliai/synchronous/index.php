@@ -86,25 +86,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="3u">
-							<section id="sidebar1">
-								<header>
-									<h2>Sidebar 1</h2>
-								</header>
-								<ul class="style3">
-									<li class="first">
-										<p class="date"><a href="#">Oct <b>03</b></a></p>
-										<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent urna congue rutrum. </a></p>
-									</li>
-									<li>
-										<p class="date"><a href="#">Sep <b>30</b></a></p>
-										<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent urna congue rutrum.</a></p>
-									</li>
-									<li>
-										<p class="date"><a href="#">Sep <b>27</b></a> </p>
-										<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent urna congue rutrum.</a></p>
-									</li>
-								</ul>
-							</section>
+							<?php include ( "priedai/kaires_blokai.php" ); ?>
 						</div>
 						<div class="6u skel-cell-important">
 						<section  id="content">
@@ -117,7 +99,7 @@
 						}
 
 						include ( "priedai/centro_blokai.php" );
-
+						
 						include ( $page . ".php" );
 
 						?>
@@ -125,10 +107,7 @@
 
 						</div>
 						<div class="3u">
-							<section id="sidebard2">
 							<?php include ( "priedai/desines_blokai.php" ); ?>
-
-							</section>
 						</div>
 					</div>
 

@@ -9,7 +9,7 @@
  * @$Revision$
  * @$Date$
  **/
-//print_r($_GET);
+// print_r($_GET);
 $memb = explode( ( $conf['F_urls'] != '0' ? $conf['F_urls'] : ';' ), $_SERVER['QUERY_STRING'] );
 if ( isset( $memb[1] ) ) {
 	$sql = mysql_query1( "SELECT * AS ip FROM `" . LENTELES_PRIESAGA . "users` WHERE `nick`=" . escape( $memb[1] ) . " LIMIT 1", 86400 );

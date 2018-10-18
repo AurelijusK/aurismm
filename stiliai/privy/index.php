@@ -29,9 +29,9 @@ Released   : 20130902
 <div id="page" class="container">
 	<div id="header">
 		<div id="logo">
-			<img src="images/pic02.jpg" alt="" />
-			<h1><a href="<?php echo adresas(); ?>">Privy</a></h1>
-			<span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></span>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/One-news-logo.jpg" width='100px' alt="" />
+			<h1><a href="<?php echo adresas(); ?>">|||</a></h1>
+			<span><a href="<?php echo adresas(); ?>" rel="nofollow">PRADŽIA</a></span>
 		</div>
 		<div id="menu">
 		<ul>
@@ -81,31 +81,26 @@ Released   : 20130902
 		</div>
 		<div id="featured">
 			<div class="title">
-				<h2>Maecenas lectus sapien</h2>
-				<span class="byline">Integer sit amet aliquet pretium</span>
+				<!-- <h2>Maecenas lectus sapien</h2>
+				<span class="byline">Integer sit amet aliquet pretium</span> -->
 			</div>
 			<ul class="style1">
 				<li class="first">
-					<p class="date"><a href="#">Jan<b>05</b></a></p>
-					<h3>Amet sed volutpat mauris</h3>
-					<p><a href="#">Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et, tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi a sem semper eleifend. Etiam non felis. Donec ut ante.</a></p>
+				<?php
+
+				if ( isset( $strError ) && !empty( $strError ) ) {
+
+					klaida( "Klaida", $strError );
+
+				}
+
+				include ( "priedai/centro_blokai.php" );
+
+				include ( $page . ".php" );
+
+				?>				
 				</li>
-				<li>
-					<p class="date"><a href="#">Jan<b>03</b></a></p>
-					<h3>Sagittis diam dolor amet</h3>
-					<p><a href="#">Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie. Donec leo, vivamus fermentum nibh in augue praesent congue rutrum.</a></p>
-				</li>
-				<li>
-					<p class="date"><a href="#">Jan<b>01</b></a></p>
-					<h3>Amet sed volutpat mauris</h3>
-					<p><a href="#">Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et, tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi a sem semper eleifend. Etiam non felis. Donec ut ante.</a></p>
-				</li>
-				<li>
-					<p class="date"><a href="#">Dec<b>31</b></a></p>
-					<h3>Sagittis diam dolor amet</h3>
-					<p><a href="#">Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie. Donec leo, vivamus fermentum nibh in augue praesent congue rutrum.</a></p>
-				</li>
-			</ul>
+							</ul>
 		</div>
 		<div id="copyright">
 			<span>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a></span>

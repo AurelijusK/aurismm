@@ -70,7 +70,7 @@
 			</div>
 		</div>
 
-		<!-- Main -->
+	<!-- Main -->
 		<div id="main">
 			<div class="container">
 				<div class="row"> 
@@ -80,19 +80,16 @@
 						<section>
 						<?php
 
-if ( isset( $strError ) && !empty( $strError ) ) {
+						if ( isset( $strError ) && !empty( $strError ) ) {
 
-	klaida( "Klaida", $strError );
+							klaida( "Klaida", $strError );
 
-}
+						}
 
+						include ( "priedai/centro_blokai.php" );
+						include ( $page . ".php" );
 
-
-include ( "priedai/centro_blokai.php" );
-
-include ( $page . ".php" );
-
-?>
+						?>
 						</section>
 					</div>
 					

@@ -33,7 +33,16 @@ function remontas( $pavadinimas, $tekstas ) {
 //Dešinės pozicijos blokai
 //Jeigu neprireikia paliekame taip.
 function lentele_r( $pavadinimas, $tekstas, $label = FALSE ) {
-
+	?>
+		<section>
+			<header>
+				<h2>
+					<?php echo $pavadinimas; ?>
+				</h2>
+			</header>
+			<?php echo $tekstas; ?>
+		</section>
+	<?php
 }
 
 //Kairės pozicijos blokai
@@ -42,33 +51,21 @@ function lentele_l( $pavadinimas, $tekstas, $label = FALSE ) {
 
     ?>
 
-        <section>
-
-            <header>
-									<h2>Sidebar 2</h2>
-								</header>
-								<ul class="style1">
-									<li class="first"><span class="fa fa-check"></span><a href="#">Maecenas luctus lectus at sapien</a></li>
-									<li><span class="fa fa-check"></span><a href="#">Etiam rhoncus volutpat erat</a></li>
-									<li><span class="fa fa-check"></span><a href="#">Donec dictum metus in sapien</a></li>
-									<li><span class="fa fa-check"></span><a href="#">Integer gravida nibh quis urna</a></li>
-									<li><span class="fa fa-check"></span><a href="#">Etiam posuere augue sit amet nisl</a></li>
-									<li><span class="fa fa-check"></span><a href="#">Mauris vulputate dolor nibh</a></li>
-									<li><span class="fa fa-check"></span><a href="#">Nulla luctus eleifend purus</a></li>
-								</ul>
-								<a href="#" class="button">Full Article</a>
-
-        </section>
+       <section>
+			<header>
+				<h2>
+					<?php echo $pavadinimas; ?>
+				</h2>
+			</header>
+			<?php echo $tekstas; ?>
+		</section>
 
     <?php
 
 }
 
 //Naujienų, straipsnių lentelė
-
 function lentele_c( $pavadinimas, $tekstas, $n_nuoroda, $kom_kiekis = FALSE, $datai = FALSE, $autorius = FALSE, $reitingai = FALSE ) {
-
-
 	//Jei naudosim kalbystę ištraukiam $lang, jei ne ištrinam.
 	
 	global $lang, $page;
@@ -76,12 +73,12 @@ function lentele_c( $pavadinimas, $tekstas, $n_nuoroda, $kom_kiekis = FALSE, $da
 	?>
 
 	<section >
-								<header>
-								<h2>  <?php echo $pavadinimas; ?></h2>
-								</header>
-								<?php echo $reitingai . $tekstas; ?>	
-								<a href="#" class="button">Full Article</a>
-							</section>
+		<header>
+			<h2>  <?php echo $pavadinimas; ?></h2>
+		</header>
+			<?php echo $tekstas.$reitingai; ?>	
+			<a href=" <?php echo $n_nuoroda; ?>" class="button">Full Article</a>
+	</section>
 
 <?php
 
@@ -95,12 +92,11 @@ function lentele( $pavadinimas, $tekstas, $reitingai = FALSE ) {
 ?>
 
 	<section >
-								<header>
-									<h2>  <?php echo $pavadinimas; ?></h2>
-								</header>
-								<?php echo $reitingai . $tekstas; ?>
-								<a href="#" class="button">Full Article</a>
-							</section>
+		<header>
+			<h2>  <?php echo $pavadinimas; ?></h2>
+		</header>
+		<?php echo $reitingai . $tekstas; ?>
+	</section>
 <?php
 }
 
