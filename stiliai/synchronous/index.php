@@ -88,8 +88,8 @@
 						<div class="3u">
 							<?php include ( "priedai/kaires_blokai.php" ); ?>
 						</div>
-						<div class="6u skel-cell-important">
-						<section  id="content">
+						<div class="6u skel-cell-important" >
+						<section  id="content" >
 						<?php
 
 						if ( isset( $strError ) && !empty( $strError ) ) {

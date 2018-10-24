@@ -33,16 +33,8 @@ function remontas( $pavadinimas, $tekstas ) {
 //Dešinės pozicijos blokai
 //Jeigu neprireikia paliekame taip.
 function lentele_r( $pavadinimas, $tekstas, $label = FALSE ) {
-	?>
-		<section>
-			<header>
-				<h2>
-					<?php echo $pavadinimas; ?>
-				</h2>
-			</header>
-			<?php echo $tekstas; ?>
-		</section>
-	<?php
+
+	lentele_l( $pavadinimas, $tekstas );
 }
 
 //Kairės pozicijos blokai
@@ -51,33 +43,52 @@ function lentele_l( $pavadinimas, $tekstas, $label = FALSE ) {
 
     ?>
 
-       <section>
-			<header>
-				<h2>
-					<?php echo $pavadinimas; ?>
-				</h2>
-			</header>
-			<?php echo $tekstas; ?>
-		</section>
+        <section>
+
+            <header>
+
+                <h2>
+
+                    <?php echo $pavadinimas; ?>
+
+                </h2>
+
+            </header>
+
+            <?php echo $tekstas; ?>
+
+        </section>
 
     <?php
 
 }
 
 //Naujienų, straipsnių lentelė
+
 function lentele_c( $pavadinimas, $tekstas, $n_nuoroda, $kom_kiekis = FALSE, $datai = FALSE, $autorius = FALSE, $reitingai = FALSE ) {
+
+
 	//Jei naudosim kalbystę ištraukiam $lang, jei ne ištrinam.
 	
 	global $lang, $page;
 
 	?>
 
-	<section >
+	<section>
+
 		<header>
-			<h2>  <?php echo $pavadinimas; ?></h2>
+
+			<h2>
+
+				<a href="<?php echo $n_nuoroda; ?>"><?php echo $pavadinimas; ?></a>
+
+			</h2>
+
 		</header>
-			<?php echo $tekstas.$reitingai; ?>	
-			<a href=" <?php echo $n_nuoroda; ?>" class="button">Full Article</a>
+
+		<?php echo $tekstas. $reitingai; ?>
+		<a href=" <?php echo $n_nuoroda; ?>" class="button">Skaityti</a>
+
 	</section>
 
 <?php
@@ -91,12 +102,22 @@ function lentele( $pavadinimas, $tekstas, $reitingai = FALSE ) {
 
 ?>
 
-	<section >
+	<section>
+
 		<header>
-			<h2>  <?php echo $pavadinimas; ?></h2>
+
+			<h2>
+
+				<?php echo $pavadinimas; ?>
+
+			</h2>
+
 		</header>
-		<?php echo $reitingai . $tekstas; ?>
+
+		<?php echo  $tekstas.$reitingai ; ?>
+
 	</section>
+
 <?php
 }
 

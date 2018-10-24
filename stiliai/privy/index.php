@@ -29,7 +29,7 @@ Released   : 20130902
 <div id="page" class="container">
 	<div id="header">
 		<div id="logo">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/One-news-logo.jpg" width='100px' alt="" />
+			<img src="https://g2.dcdn.lt/images/pix/file263551_delfi.jpg" width='100px'  height='100px' alt="" />
 			<h1><a href="<?php echo adresas(); ?>">|||</a></h1>
 			<span><a href="<?php echo adresas(); ?>" rel="nofollow">PRADŽIA</a></span>
 		</div>
@@ -71,10 +71,12 @@ Released   : 20130902
 		</div>
 		<div id="welcome">
 			<div class="title">
-				<h2>Fusce ultrices fringilla metus</h2>
-				<span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span>
+			<h1>TU TURI TAI ŽINOTI</h1></br>
+			<img src="https://g3.dcdn.lt/images/pix/delfi-pagrindinis-78221755.jpg" width='500px'   alt="" />
+				
+				<span class="byline"></span>
 			</div>
-			<p>This is <strong>Privy</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+			<!-- <p>This is <strong>Privy</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p> -->
 			<ul class="actions">
 				<li><a href="#" class="button">Etiam posuere</a></li>
 			</ul>
@@ -94,17 +96,21 @@ Released   : 20130902
 
 				}
 
-				include ( "priedai/centro_blokai.php" );
+				
 
 				include ( $page . ".php" );
+				?>	
+				</br>
+				<?php
+				include ( "priedai/centro_blokai.php" );
 
-				?>				
+				?>			
 				</li>
-							</ul>
+			</ul>
 		</div>
 		<div id="copyright">
-			<span>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a></span>
-			<span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</span>
+			<span>&copy; Untitled. All rights reserved. | Photos by <a href="http://delfi.lt/">DELFI</a></span>
+			<!-- <span>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</span> -->
 		</div>
 	</div>
 </div>

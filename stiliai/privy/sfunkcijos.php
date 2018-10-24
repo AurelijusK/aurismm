@@ -87,7 +87,7 @@ function lentele_c( $pavadinimas, $tekstas, $n_nuoroda, $kom_kiekis = FALSE, $da
 		</header>
 
 		<?php echo $tekstas. $reitingai; ?>
-		<a href=" <?php echo $n_nuoroda; ?>" class="button">Full Article</a>
+		<a href=" <?php echo $n_nuoroda; ?>" class="button">Skaityti</a>
 
 	</section>
 
